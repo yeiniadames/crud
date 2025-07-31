@@ -2,14 +2,14 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #b45f5f;
+      background: #b45f0f;
       padding: 20px;
     }
     h1 {
       text-align: center;
     }
     form {
-      background: rgb(172, 138, 173);
+      background: rgb(171, 138, 173);
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
