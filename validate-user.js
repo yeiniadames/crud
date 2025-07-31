@@ -1,4 +1,5 @@
 
+
     let estudiantes = JSON.parse(localStorage.getItem("estudiantes")) || [];
     let editIndex = null;
 
@@ -64,3 +65,14 @@
     });
 
     renderTabla();
+
+if (!nombre || !apellido || !matricula || !carrera) {
+  alert("Todos los campos son obligatorios");
+  return;
+}
+
+const existe = estudiantes.some(e => e.matricula === matricula && editIndex === null);
+if (existe) {
+  alert("La matrícula ya existe");
+  return;
+}
